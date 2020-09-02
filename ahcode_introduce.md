@@ -35,7 +35,6 @@ AH-CODE电商平台分为两个大系统: **前台系统**, **后台系统**。�
 
 - `YuKai Fan`
 - `JinBiao Yin`
-- `YoJun Wu`
 
 ### 开发周期
 
