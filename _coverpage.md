@@ -3,5 +3,5 @@
 </p>
 <h1 align="center">AH-CODE开发文档</h1>
 
-[GitHub](https://github.com/Snailclimb/docsify-demo)
+[GitHub](https://github.com/Forever1996Fyk/AHCODE-DevelopDoc)
 [开始阅读](/ahcode_introduce.md)
