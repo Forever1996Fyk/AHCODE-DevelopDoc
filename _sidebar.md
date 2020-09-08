@@ -7,3 +7,5 @@
     * [环境搭建](/develop_prepare/environment_setup.md)
     * [API规范整理](/develop_prepare/api_specification.md)
     * [代码规范整理](/develop_prepare/code_specification.md)
+* 开发详细文档
+    * [项目结构](/develop_project/project_structure.md)
