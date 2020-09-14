@@ -12,7 +12,7 @@
 version: '3.1'
 services:
   db:
-    image: mysql:8.0.12
+    image: mysql:8.0.21
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123456
@@ -25,8 +25,9 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./data:/var/lib/mysql # 映射mysql容器中的数据卷到宿主机上
-      - ./my.cnf:/etc/mysql/my.cnf # 映射mysql容器中的配置文件到宿主机上
+      - /usr/etc/docker-compose/mysql/data:/var/lib/mysql # 映射mysql容器中的数据卷到宿主机上
+      - /usr/etc/docker-compose/mysql/my.cnf:/etc/mysql/my.cnf # 映射mysql容器中的配置文件到宿主机上
+      - /usr/etc/docker-compose/mysql/log:/var/log/mysql
 ```
 
 ### 1.2 在宿主机中准备`MySQL 8.0.21`的主从库配置文件`my.cnf`:
