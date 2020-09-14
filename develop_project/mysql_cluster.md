@@ -69,10 +69,17 @@ symbolic-links=0
 server-id=192168100110 # 注意server-id必须唯一, 这里取的是ip地址
 relay-log-index=relay-log-bin.index
 relay-log=relay-bin
+replicate_wild_ignore_table=mysql.%
+replicate_wild_ignore_table=information_schema.%
+replicate_wild_ignore_table=performance_schema.%
+
 
 # 主库配置
 server-id=1 # 注意server-id必须唯一, 这里取的是ip地址
 log-bin=mysql-bin
+binlog-ignore-db=mysql
+binlog-ignore-db=information_schema
+binlog-ignore-db=performance_schema
 
 ```
 
@@ -129,5 +136,10 @@ start slave;
 show slave status \G;
 ```
 
+### 2.3 查看状态
+
+经过上面的操作, 如下图所示, 即表示连接成功, 否则根据失败的日志, 查找原因
+
+![MySQL_Cluster](/images/MySQL_Cluster.png)
 
 
