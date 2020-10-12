@@ -3,14 +3,23 @@
 ```text
 ah-code
 ├── ahcloud-denpendencies -- 统一依赖管理
-└── ahcloud-common -- 系统公共模块管理 
+├── ahcloud-parent -- 项目父工程
+└── ahcloud-commons -- 系统公共模块管理 
      ├── ahcloud-common-core -- 公共工具类核心包
-└── ahcloud-pojo -- 系统领域模型管理 
-    ├── ahcloud-entity -- 数据对象: 跟数据表字段对应
-    ├── ahcloud-dto -- 数据传输对象: 用于不同系统之间的传输对象
-    ├── ahcloud-vo -- 展示对象: 传回前端的对象数据模型
-    ├── ahcloud-query -- 数据查询对象: 前端传入的查询对象
-
+     ├── ahcloud-common-web --  服务提供端核心公共包
+     ├── ahcloud-common-auth-client-starter -- 资源服务器公共封装包
+     ├── ahcloud-common-auth-server-starter -- 认证服务器公共封装包
+└── ahcloud-auth-server -- 统一认证服务
+└── ahcloud-service -- 服务提供者
+    ├── ahcloud-base-authority-service -- 基础权限服务
+    ├── ahcloud-gateway-service -- 网关服务
+└── ahcloud-app -- 服务消费者
+    ├── ahcloud-base-authority-app -- 基础权限服务消费者
+    ├── ahcloud-gateway-app -- 网关服务消费者
+    ├── ahcloud-common-app -- 公共消费者封装包
+└── ahcloud-api -- api接口
+    ├── ahcloud-base-authority-api -- 基础权限接口
+    ├── ahcloud-gateway-api -- 网关服务接口
 ```		
 
 项目结构会随着开发的过程不断演进。
